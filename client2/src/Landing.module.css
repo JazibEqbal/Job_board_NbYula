@@ -1,0 +1,115 @@
+.landing {
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    height: 40rem;
+  }
+  .landing__logo {
+    object-fit: contain;
+    height: 750px;
+    opacity: .5;
+    margin-top: 200px;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    margin-top: 6rem;
+  }
+  .container__left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 15.5rem;
+    margin-left: -315px;
+    justify-content: left;
+    z-index: 100;
+  }
+  .container__left > h2 {
+    color: rgb(52, 51, 51);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    margin-left: -10px;
+  }
+  .container__left > h2 > span {
+    color: #14919b;
+  }
+  .container__left > p {
+    display: block;
+    font-size: 16px;
+    color: rgb(72, 101, 129);
+    text-align: center;
+    line-height: 1.5rem;
+    margin-left: -90px;
+  }
+  .registerLink_button{
+    display:contents;
+  }
+  .registerLink_button > button {
+    padding: 8px 16px;
+    background-color: #2cb1bc;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    max-width: 170px;
+    min-width: 150px;
+    margin-left: 30px;
+  }
+  .registerLink_button > button:hover {
+    background-color: #0e7c86;
+    transition: transform 400ms ease-in-out;
+    transform: scale(1.01);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  .container__right {
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+    margin-top: 3rem;
+    align-items: center;
+  }
+  .landingImage {
+    object-fit: contain;
+    width: 100%;
+    height: 590px;
+  }
+  .copyright{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    color: rgb(72, 101, 129);
+    opacity: 0.8;
+    font-weight: 400;
+  }
+  /* MOBILE RESPONSIVE */
+  
+  @media only screen and (max-width: 990px) {
+    .landing {
+      width: 90vw;
+      margin-left: 0;
+    }
+    nav {
+      margin-left: -30px;
+    }
+    .container__left {
+      flex: 0.9;
+      width: 100vw;
+      height: 50vh;
+    }
+    .container__left > button {
+      font-size: 1rem;
+      min-width: 150px;
+      margin-top: 60px;
+    }
+  }
+  

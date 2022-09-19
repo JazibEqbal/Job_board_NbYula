@@ -1,0 +1,9 @@
+.dashboard{
+    display: block;
+    margin: 40px;
+}
+.dashboard__header{
+    color: rgb(63, 62, 62);
+    margin-top: 20px;
+    text-align: center;
+}
